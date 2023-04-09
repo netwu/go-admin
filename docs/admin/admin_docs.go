@@ -92,9 +92,9 @@ const docTemplateadmin = `{
                 ],
                 "description": "分页列表",
                 "tags": [
-                    "部门"
+                    "组织"
                 ],
-                "summary": "分页部门列表数据",
+                "summary": "分页组织列表数据",
                 "parameters": [
                     {
                         "type": "string",
@@ -135,9 +135,9 @@ const docTemplateadmin = `{
                     "application/json"
                 ],
                 "tags": [
-                    "部门"
+                    "组织"
                 ],
-                "summary": "添加部门",
+                "summary": "添加组织",
                 "parameters": [
                     {
                         "description": "data",
@@ -166,9 +166,9 @@ const docTemplateadmin = `{
                 ],
                 "description": "删除数据",
                 "tags": [
-                    "部门"
+                    "组织"
                 ],
-                "summary": "删除部门",
+                "summary": "删除组织",
                 "parameters": [
                     {
                         "description": "body",
@@ -199,9 +199,9 @@ const docTemplateadmin = `{
                 ],
                 "description": "获取JSON",
                 "tags": [
-                    "部门"
+                    "组织"
                 ],
-                "summary": "获取部门数据",
+                "summary": "获取组织数据",
                 "parameters": [
                     {
                         "type": "string",
@@ -230,9 +230,9 @@ const docTemplateadmin = `{
                     "application/json"
                 ],
                 "tags": [
-                    "部门"
+                    "组织"
                 ],
-                "summary": "修改部门",
+                "summary": "修改组织",
                 "parameters": [
                     {
                         "type": "integer",
@@ -2655,7 +2655,7 @@ const docTemplateadmin = `{
                     "type": "integer"
                 },
                 "deptName": {
-                    "description": "部门名称",
+                    "description": "组织名称",
                     "type": "string"
                 },
                 "deptPath": {
@@ -2671,7 +2671,7 @@ const docTemplateadmin = `{
                     "type": "string"
                 },
                 "parentId": {
-                    "description": "上级部门",
+                    "description": "上级组织",
                     "type": "integer"
                 },
                 "phone": {
@@ -2702,7 +2702,7 @@ const docTemplateadmin = `{
                     "type": "integer"
                 },
                 "deptName": {
-                    "description": "部门名称",
+                    "description": "组织名称",
                     "type": "string"
                 },
                 "deptPath": {
@@ -2718,7 +2718,7 @@ const docTemplateadmin = `{
                     "type": "string"
                 },
                 "parentId": {
-                    "description": "上级部门",
+                    "description": "上级组织",
                     "type": "integer"
                 },
                 "phone": {
@@ -3610,11 +3610,11 @@ const docTemplateadmin = `{
                     "type": "string"
                 },
                 "deptId": {
-                    "description": "部门编码",
+                    "description": "组织编码",
                     "type": "integer"
                 },
                 "deptName": {
-                    "description": "部门名称",
+                    "description": "组织名称",
                     "type": "string"
                 },
                 "deptPath": {
@@ -3632,7 +3632,7 @@ const docTemplateadmin = `{
                     "type": "string"
                 },
                 "parentId": {
-                    "description": "上级部门",
+                    "description": "上级组织",
                     "type": "integer"
                 },
                 "phone": {

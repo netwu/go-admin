@@ -21,7 +21,7 @@ type SysOperaLog struct {
 	RequestMethod string    `json:"requestMethod" gorm:"size:128;comment:请求方式 GET POST PUT DELETE"`
 	OperatorType  string    `json:"operatorType" gorm:"size:128;comment:操作类型"`
 	OperName      string    `json:"operName" gorm:"size:128;comment:操作者"`
-	DeptName      string    `json:"deptName" gorm:"size:128;comment:部门名称"`
+	DeptName      string    `json:"deptName" gorm:"size:128;comment:组织名称"`
 	OperUrl       string    `json:"operUrl" gorm:"size:255;comment:访问地址"`
 	OperIp        string    `json:"operIp" gorm:"size:128;comment:客户端ip"`
 	OperLocation  string    `json:"operLocation" gorm:"size:128;comment:访问位置"`

@@ -43,7 +43,7 @@ type SysOperaLogControl struct {
 	RequestMethod string    `json:"requestMethod" comment:"请求方式"`
 	OperatorType  string    `json:"operatorType" comment:"操作类型"`
 	OperName      string    `json:"operName" comment:"操作者"`
-	DeptName      string    `json:"deptName" comment:"部门名称"`
+	DeptName      string    `json:"deptName" comment:"组织名称"`
 	OperUrl       string    `json:"operUrl" comment:"访问地址"`
 	OperIp        string    `json:"operIp" comment:"客户端ip"`
 	OperLocation  string    `json:"operLocation" comment:"访问位置"`

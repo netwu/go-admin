@@ -2,6 +2,7 @@ package models
 
 import (
 	"go-admin/common/models"
+
 	"golang.org/x/crypto/bcrypt"
 	"gorm.io/gorm"
 )
@@ -17,7 +18,7 @@ type SysUser struct {
 	Avatar   string   `json:"avatar" gorm:"size:255;comment:头像"`
 	Sex      string   `json:"sex" gorm:"size:255;comment:性别"`
 	Email    string   `json:"email" gorm:"size:128;comment:邮箱"`
-	DeptId   int      `json:"deptId" gorm:"size:20;comment:部门"`
+	DeptId   int      `json:"deptId" gorm:"size:20;comment:组织"`
 	PostId   int      `json:"postId" gorm:"size:20;comment:岗位"`
 	Remark   string   `json:"remark" gorm:"size:255;comment:备注"`
 	Status   string   `json:"status" gorm:"size:4;comment:状态"`
@@ -42,7 +43,7 @@ func (e *SysUser) GetId() interface{} {
 	return e.UserId
 }
 
-//加密
+// 加密
 func (e *SysUser) Encrypt() (err error) {
 	if e.Password == "" {
 		return

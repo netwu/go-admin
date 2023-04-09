@@ -1,4 +1,4 @@
-package version_local
+package version
 
 func init() {
 }

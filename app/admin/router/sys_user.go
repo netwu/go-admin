@@ -1,14 +1,19 @@
 package router
 
 import (
-	"github.com/gin-gonic/gin"
-	jwt "github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth"
 	"go-admin/app/admin/apis"
 	"go-admin/common/actions"
 	"go-admin/common/middleware"
+
+	"log"
+
+	"github.com/gin-gonic/gin"
+	jwt "github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth"
 )
 
 func init() {
+	log.Println("this is sys-user init")
+
 	routerCheckRole = append(routerCheckRole, registerSysUserRouter)
 }
 

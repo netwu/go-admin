@@ -2,14 +2,13 @@
 
   <img align="right" width="320" src="https://doc-image.zhangwj.com/img/go-admin.svg">
 
-
 [![Build Status](https://github.com/wenjianzhang/go-admin/workflows/build/badge.svg)](https://github.com/go-admin-team/go-admin)
 [![Release](https://img.shields.io/github/release/go-admin-team/go-admin.svg?style=flat-square)](https://github.com/go-admin-team/go-admin/releases)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/go-admin-team/go-admin)
 
 [English](https://github.com/go-admin-team/go-admin/blob/master/README.md) | 简体中文
 
-基于Gin + Vue + Element UI OR Arco Design OR Ant Design的前后端分离权限管理系统,系统初始化极度简单，只需要配置文件中，修改数据库连接，系统支持多指令操作，迁移指令可以让初始化数据库信息变得更简单，服务指令可以很简单的启动api服务
+基于 Gin + Vue + Element UI OR Arco Design OR Ant Design 的前后端分离权限管理系统,系统初始化极度简单，只需要配置文件中，修改数据库连接，系统支持多指令操作，迁移指令可以让初始化数据库信息变得更简单，服务指令可以很简单的启动 api 服务
 
 [在线文档](https://www.go-admin.pro)
 
@@ -19,26 +18,29 @@
 
 ## 🎬 在线体验
 
-Element UI vue体验：[https://vue2.go-admin.dev](https://vue2.go-admin.dev/#/login)
+Element UI vue 体验：[https://vue2.go-admin.dev](https://vue2.go-admin.dev/#/login)
+
 > ⚠️⚠️⚠️ 账号 / 密码： admin / 123456
 
 Arco Design vue3 demo：[https://vue3.go-admin.dev](https://vue3.go-admin.dev/#/login)
+
 > ⚠️⚠️⚠️ 账号 / 密码： admin / 123456
 
-antd体验：[https://antd.go-admin.pro](https://antd.go-admin.pro/)
+antd 体验：[https://antd.go-admin.pro](https://antd.go-admin.pro/)
+
 > ⚠️⚠️⚠️ 账号 / 密码： admin / 123456
 
 ## ✨ 特性
 
 - 遵循 RESTful API 设计规范
 
-- 基于 GIN WEB API 框架，提供了丰富的中间件支持（用户认证、跨域、访问日志、追踪ID等）
+- 基于 GIN WEB API 框架，提供了丰富的中间件支持（用户认证、跨域、访问日志、追踪 ID 等）
 
-- 基于Casbin的 RBAC 访问控制模型
+- 基于 Casbin 的 RBAC 访问控制模型
 
 - JWT 认证
 
-- 支持 Swagger 文档(基于swaggo)
+- 支持 Swagger 文档(基于 swaggo)
 
 - 基于 GORM 的数据库存储，可扩展多种类型数据库
 
@@ -58,28 +60,28 @@ antd体验：[https://antd.go-admin.pro](https://antd.go-admin.pro/)
 
 1. 多租户：系统默认支持多租户，按库分离，一个库一个租户。
 1. 用户管理：用户是系统操作者，该功能主要完成系统用户配置。
-2. 部门管理：配置系统组织机构（公司、部门、小组），树结构展现支持数据权限。
-3. 岗位管理：配置系统用户所属担任职务。
-4. 菜单管理：配置系统菜单，操作权限，按钮权限标识，接口权限等。
-5. 角色管理：角色菜单权限分配、设置角色按机构进行数据范围权限划分。
-6. 字典管理：对系统中经常使用的一些较为固定的数据进行维护。
-7. 参数管理：对系统动态配置常用参数。
-8. 操作日志：系统正常操作日志记录和查询；系统异常信息日志记录和查询。
-9. 登录日志：系统登录日志记录查询包含登录异常。
-1. 接口文档：根据业务代码自动生成相关的api接口文档。
+1. 组织管理：配置系统组织机构（公司、组织、小组），树结构展现支持数据权限。
+1. 岗位管理：配置系统用户所属担任职务。
+1. 菜单管理：配置系统菜单，操作权限，按钮权限标识，接口权限等。
+1. 角色管理：角色菜单权限分配、设置角色按机构进行数据范围权限划分。
+1. 字典管理：对系统中经常使用的一些较为固定的数据进行维护。
+1. 参数管理：对系统动态配置常用参数。
+1. 操作日志：系统正常操作日志记录和查询；系统异常信息日志记录和查询。
+1. 登录日志：系统登录日志记录查询包含登录异常。
+1. 接口文档：根据业务代码自动生成相关的 api 接口文档。
 1. 代码生成：根据数据表结构生成对应的增删改查相对应业务，全程可视化操作，让基本业务可以零代码实现。
 1. 表单构建：自定义页面样式，拖拉拽实现页面布局。
 1. 服务监控：查看一些服务器的基本信息。
-1. 内容管理：demo功能，下设分类管理、内容管理。可以参考使用方便快速入门。
+1. 内容管理：demo 功能，下设分类管理、内容管理。可以参考使用方便快速入门。
 1. 定时任务：自动化任务，目前支持接口调用和函数调用。
 
 ## 准备工作
 
-你需要在本地安装 [go] [gin] [node](http://nodejs.org/) 和 [git](https://git-scm.com/) 
+你需要在本地安装 [go] [gin] [node](http://nodejs.org/) 和 [git](https://git-scm.com/)
 
 同时配套了系列教程包含视频和文档，如何从下载完成到熟练使用，强烈建议大家先看完这些教程再来实践本项目！！！
 
-### 轻松实现go-admin写出第一个应用 - 文档教程
+### 轻松实现 go-admin 写出第一个应用 - 文档教程
 
 [步骤一 - 基础内容介绍](https://doc.zhangwj.com/guide/intro/tutorial01.html)
 
@@ -87,21 +89,21 @@ antd体验：[https://antd.go-admin.pro](https://antd.go-admin.pro/)
 
 ### 手把手教你从入门到放弃 - 视频教程
 
-[如何启动go-admin](https://www.bilibili.com/video/BV1z5411x7JG)
+[如何启动 go-admin](https://www.bilibili.com/video/BV1z5411x7JG)
 
 [使用生成工具轻松实现业务](https://www.bilibili.com/video/BV1Dg4y1i79D)
 
-[v1.1.0版本代码生成工具-释放双手](https://www.bilibili.com/video/BV1N54y1i71P) [进阶]
+[v1.1.0 版本代码生成工具-释放双手](https://www.bilibili.com/video/BV1N54y1i71P) [进阶]
 
-[多命令启动方式讲解以及IDE配置](https://www.bilibili.com/video/BV1Fg4y1q7ph)
+[多命令启动方式讲解以及 IDE 配置](https://www.bilibili.com/video/BV1Fg4y1q7ph)
 
-[go-admin菜单的配置说明](https://www.bilibili.com/video/BV1Wp4y1D715) [必看]
+[go-admin 菜单的配置说明](https://www.bilibili.com/video/BV1Wp4y1D715) [必看]
 
 [如何配置菜单信息以及接口信息](https://www.bilibili.com/video/BV1zv411B7nG) [必看]
 
-[go-admin权限配置使用说明](https://www.bilibili.com/video/BV1rt4y197d3) [必看]
+[go-admin 权限配置使用说明](https://www.bilibili.com/video/BV1rt4y197d3) [必看]
 
-[go-admin数据权限使用说明](https://www.bilibili.com/video/BV1LK4y1s71e) [必看]
+[go-admin 数据权限使用说明](https://www.bilibili.com/video/BV1LK4y1s71e) [必看]
 
 **如有问题请先看上述使用文档和文章，若不能满足，欢迎 issue 和 pr ，视频教程和文档持续更新中**
 
@@ -111,9 +113,9 @@ antd体验：[https://antd.go-admin.pro](https://antd.go-admin.pro/)
 
 go 1.18
 
-node版本: v14.16.0
+node 版本: v14.16.0
 
-npm版本: 6.14.11
+npm 版本: 6.14.11
 
 ### 开发目录创建
 
@@ -151,16 +153,16 @@ go mod tidy
 # 编译项目
 go build
 
-# 修改配置 
+# 修改配置
 # 文件路径  go-admin/config/settings.yml
-vi ./config/setting.yml 
+vi ./config/setting.yml
 
-# 1. 配置文件中修改数据库信息 
+# 1. 配置文件中修改数据库信息
 # 注意: settings.database 下对应的配置数据
 # 2. 确认log路径
 ```
 
-:::tip ⚠️注意 在windows环境如果没有安装中CGO，会出现这个问题；
+:::tip ⚠️ 注意 在 windows 环境如果没有安装中 CGO，会出现这个问题；
 
 ```bash
 E:\go-admin>go build
@@ -176,13 +178,13 @@ D:\Code\go-admin>go build
 cgo: exec gcc: exec: "gcc": executable file not found in %PATH%
 ```
 
-[解决cgo问题进入](https://doc.go-admin.dev/zh-CN/guide/faq#cgo-%E7%9A%84%E9%97%AE%E9%A2%98)
+[解决 cgo 问题进入](https://doc.go-admin.dev/zh-CN/guide/faq#cgo-%E7%9A%84%E9%97%AE%E9%A2%98)
 
 :::
 
 #### 初始化数据库，以及服务启动
 
-``` bash
+```bash
 # 首次配置需要初始化数据库资源信息
 # macOS or linux 下使用
 $ ./go-admin migrate -c config/settings.dev.yml
@@ -203,11 +205,12 @@ $ go-admin.exe server -c config/settings.yml
 #### sys_api 表的数据如何添加
 
 在项目启动时，使用`-a true` 系统会自动添加缺少的接口数据
+
 ```bash
 ./go-admin server -c config/settings.yml -a true
 ```
 
-#### 使用docker 编译启动
+#### 使用 docker 编译启动
 
 ```shell
 # 编译镜像
@@ -235,7 +238,7 @@ env GOOS=windows GOARCH=amd64 go build main.go
 env GOOS=linux GOARCH=amd64 go build main.go
 ```
 
-### UI交互端启动说明
+### UI 交互端启动说明
 
 ```bash
 # 安装依赖
@@ -266,7 +269,6 @@ npm run dev
 </table>
 
 ## 💎 贡献者
-
 
 <span style="margin: 0 5px;" ><a href="https://github.com/wenjianzhang" ><img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/3890175?v=4&h=60&w=60&fit=cover&mask=circle&maxage=7d" /></a></span>
 <span style="margin: 0 5px;" ><a href="https://github.com/G-Akiraka" ><img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/45746659?s=64&v=4&w=60&fit=cover&mask=circle&maxage=7d" /></a></span>
@@ -323,18 +325,17 @@ npm run dev
 
 1. [ant-design](https://github.com/ant-design/ant-design)
 2. [ant-design-pro](https://github.com/ant-design/ant-design-pro)
-2. [arco-design](https://github.com/arco-design/arco-design)
-2. [arco-design-pro](https://github.com/arco-design/arco-design-pro)
-4. [gin](https://github.com/gin-gonic/gin)
-5. [casbin](https://github.com/casbin/casbin)
-6. [spf13/viper](https://github.com/spf13/viper)
-7. [gorm](https://github.com/jinzhu/gorm)
-8. [gin-swagger](https://github.com/swaggo/gin-swagger)
-9. [jwt-go](https://github.com/dgrijalva/jwt-go)
-10. [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
-11. [ruoyi-vue](https://gitee.com/y_project/RuoYi-Vue)
-12. [form-generator](https://github.com/JakHuang/form-generator)
-
+3. [arco-design](https://github.com/arco-design/arco-design)
+4. [arco-design-pro](https://github.com/arco-design/arco-design-pro)
+5. [gin](https://github.com/gin-gonic/gin)
+6. [casbin](https://github.com/casbin/casbin)
+7. [spf13/viper](https://github.com/spf13/viper)
+8. [gorm](https://github.com/jinzhu/gorm)
+9. [gin-swagger](https://github.com/swaggo/gin-swagger)
+10. [jwt-go](https://github.com/dgrijalva/jwt-go)
+11. [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
+12. [ruoyi-vue](https://gitee.com/y_project/RuoYi-Vue)
+13. [form-generator](https://github.com/JakHuang/form-generator)
 
 ## 🤟 打赏
 
@@ -344,7 +345,7 @@ npm run dev
 
 ## 🤝 链接
 
-[Go开发者成长线路图](http://www.golangroadmap.com/)
+[Go 开发者成长线路图](http://www.golangroadmap.com/)
 
 ## 🔑 License
 
